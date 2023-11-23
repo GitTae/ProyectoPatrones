@@ -2,6 +2,7 @@ package com.laca.controller;
 
 import com.laca.entity.Transporter;
 import com.laca.service.TransporterService;
+import com.laca.service.UnitTransportService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -13,12 +14,14 @@ import java.util.List;
 @RequestMapping("/transporters")
 @CrossOrigin(origins = "http://localhost:4200/")
 public class UnitTransportController {
-    private final TransporterService transporterService;
+    private final UnitTransportService unitTransportService;
 
     @Autowired
-    public TransporterController(TransporterService transporterService) {
-        this.transporterService = transporterService;
+    public UnitTransportController(UnitTransportService unitTransportService) {
+        this.unitTransportService = unitTransportService;
     }
+
+
 
     @GetMapping
     public List<Transporter> getAllTransporters() {

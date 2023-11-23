@@ -1,8 +1,7 @@
 package com.laca.service;
 
-import com.laca.entity.PackageUnitAbstract.UnitTransportDecorator;
+import com.laca.BL.FactoryUnitTransport.FactoryUnitTransporter;
 import com.laca.entity.PackageUnitAbstract.UnitTransporterAbstract;
-import com.laca.entity.Transporter;
 import jakarta.transaction.Transactional;
 
 import javax.sql.DataSource;
@@ -33,9 +32,9 @@ public class UnitTransportService {
                 unitTransporterAbstract.setType(resultSet.getString("type"));
                 unitTransporterAbstract.setMaxWeight(resultSet.getLong("name"));
                 unitTransporterAbstract.setIsActive(resultSet.getBoolean("isActive"));
+                unitTransporterAbstract =FactoryUnitTransporter.createUnitTransport(unitTransporterAbstract);
 
-
-                UnitTransport.add((UnitTransporterAbstract) UnitTransport);
+                UnitTransport.add(unitTransporterAbstract);
             }
         } catch (SQLException e) {
             // Manejo de excepciones

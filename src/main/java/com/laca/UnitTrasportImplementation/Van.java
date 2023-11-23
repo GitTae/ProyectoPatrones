@@ -1,7 +1,8 @@
-package com.laca.entity.PackageUnitAbstract.UnitTrasportImplementation;
+package com.laca.UnitTrasportImplementation;
 
 
 import com.laca.entity.PackageUnitAbstract.UnitTransporterAbstract;
+
 
 public class Van extends UnitTransporterAbstract {
 

@@ -1,7 +1,7 @@
-package com.laca.entity.PackageUnitAbstract.UnitTrasportImplementation;
+package com.laca.UnitTrasportImplementation;
+
 
 import com.laca.entity.PackageUnitAbstract.UnitTransporterAbstract;
-
 
 public class Motorcycle extends UnitTransporterAbstract {
     public Motorcycle() {

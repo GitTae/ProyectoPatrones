@@ -1,5 +1,6 @@
 package com.laca.entity.concretProduct;
 
+
 import com.laca.Interfaces.Production;
 
 public class Product implements Production {

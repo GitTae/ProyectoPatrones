@@ -1,6 +1,7 @@
 package com.laca.entity.concretUsers;
 
 
+
 import com.laca.Interfaces.IConstructUser;
 
 public class RutesUser implements IConstructUser {

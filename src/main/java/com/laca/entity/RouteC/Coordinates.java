@@ -1,4 +1,4 @@
-package com.laca.entity.RouteC;
+package main.java.com.laca.entity.RouteC;
 
 public class Coordinates {
     private double latitude;

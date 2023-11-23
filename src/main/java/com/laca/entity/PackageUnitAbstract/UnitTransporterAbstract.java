@@ -13,17 +13,19 @@ public  class UnitTransporterAbstract implements IProduct {
         private boolean isActive;
 
 
+
         public UnitTransporterAbstract(){}
 
-        public UnitTransporterAbstract(String name, String plate, double high, double width, String type, double maxWeight,boolean isActive) {
-            this.name = name;
-            this.plate = plate;
-            this. high =  high;
-            this.width = width;
-            this.type = type;
-            this. maxWeight =  maxWeight;
-            this.isActive= false;
-        }
+
+    public UnitTransporterAbstract(String name, String plate, double high, double width, String type, double maxWeight,boolean isActive) {
+        this.name = name;
+        this.plate = plate;
+        this. high =  high;
+        this.width = width;
+        this.type = type;
+        this. maxWeight =  maxWeight;
+        this.isActive= isActive;
+    }
 
     @Override
     public IProduct clonar() {
@@ -80,7 +82,7 @@ public  class UnitTransporterAbstract implements IProduct {
         return maxWeight;
     }
 
-    public boolean isActive() {return isActive;}
+    public boolean getIsActive() {return isActive;}
 
     public void setIsActive(boolean active) {isActive = active;}
 
